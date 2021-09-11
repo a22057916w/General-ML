@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn import datasets
 
+# ---------------- load iris dataset ---------------------
 # type(iris) return <class 'sklearn.utils.Bunch'>
 iris = datasets.load_iris()
 for key, value in iris.items():
@@ -66,4 +67,6 @@ iris_data = pd.concat([x, y], axis=1)
 #print(iris_data)
 
 iris_data = iris_data[["sepal length (cm)", "petal length (cm)", "target_names"]]
-print(iris_data)
+
+# 印頭3個
+print(iris_data.head(3))
