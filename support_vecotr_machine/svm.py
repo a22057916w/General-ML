@@ -128,6 +128,13 @@ type(iris_data["target"].isin([0, 1]))  --> <class 'pandas.core.series.Series'>
 
 # 印頭3個
 print(iris_data.head(3))
+print(iris_data.head(1).values)
+print(iris_data.head(1).values.tolist())
+print(type(iris_data.head(1)))
+print(type(iris_data.head(1).values))
+print(type(iris_data.head(1).values.tolist()))
+print(iris_data.keys())
+print(type(iris_data.keys()))
 print("-------------------------------------------------")
 
 
